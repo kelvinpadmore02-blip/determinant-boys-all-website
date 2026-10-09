@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050b1f">
+    <meta name="description" content="Register to join Determine Boys All Star football team in Liberia.">
+    <title>Join the Team | Determine Boys All Star</title>
+
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .join-section {
+            padding: 60px 20px 80px;
+        }
+
+        .join-container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .join-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .join-heading h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+        }
+
+        .join-heading h1 span {
+            color: #39d98a;
+        }
+
+        .join-heading p {
+            line-height: 1.7;
+        }
+
+        .join-form {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #0c1530;
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #f4f7ff;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px 14px;
+            border: 1px solid #34415f;
+            border-radius: 8px;
+            background: #080f25;
+            color: #fff;
+            font: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: 2px solid #39d98a;
+            outline-offset: 2px;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-group option {
+            background: #080f25;
+            color: #fff;
+        }
+
+        .form-note {
+            grid-column: 1 / -1;
+            font-size: .9rem;
+            line-height: 1.6;
+            color: #c5cee2;
+        }
+
+        .join-submit {
+            grid-column: 1 / -1;
+            width: 100%;
+            border: 0;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 700;
+            padding: 15px 20px;
+            border-radius: 8px;
+            background: #39d98a;
+            color: #061326;
+        }
+
+        .join-submit:hover {
+            filter: brightness(1.08);
+        }
+
+        .join-contact {
+            text-align: center;
+            margin-top: 28px;
+            line-height: 1.8;
+        }
+
+        .join-contact a {
+            color: #39d98a;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 600px) {
+            .join-form {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .form-group.full-width,
+            .form-note,
+            .join-submit {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="" width="46" height="46">
+                <span>
+                    <strong>DETERMINE</strong>
+                    <small>BOYS ALL STAR</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button"
+                    aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="fixtures.html">Fixtures</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a class="nav-cta active" href="join.html">
+                    Join the Team <span>↗</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container page-hero-inner">
+                <p class="eyebrow green-text">BECOME PART OF THE SQUAD</p>
+                <h1>Join the <span>team.</span></h1>
+                <p>
+                    Do you have a passion for football? Register your interest
+                    in joining Determine Boys All Star. Complete the form
+                    below and our team will review your application.
+                </p>
+            </div>
+        </section>
+
+        <section class="join-section">
+            <div class="join-container">
+                <div class="join-heading">
+                    <p class="eyebrow green-text">PLAYER REGISTRATION</p>
+                    <h1>Player <span>Membership Form</span></h1>
+                    <p>
+                        Please provide accurate information in all required
+                        fields. We look forward to hearing from you.
+                    </p>
+                </div>
+
+                <form
+                    class="join-form"
+                    action="https://formsubmit.co/kelvinpadmore02@email.com"
+                    method="POST">
+
+                    <input type="hidden" name="_subject"
+                           value="New Player Application - Determine Boys All Star">
+
+                    <input type="hidden" name="_template" value="table">
+
+                    <input type="hidden" name="_captcha" value="true">
+
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="Full Name"
+                               autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date-of-birth">Date of Birth *</label>
+                        <input type="date" id="date-of-birth"
+                               name="Date of Birth" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="Player Email"
+                               autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="Phone Number"
+                               autocomplete="tel" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Community / Location *</label>
+                        <input type="text" id="location" name="Community or Location"
+                               autocomplete="address-level2" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Preferred Playing Position *</label>
+                        <select id="position" name="Playing Position" required>
+                            <option value="">Choose your position</option>
+                            <option value="Goalkeeper">Goalkeeper</option>
+                            <option value="Defender">Defender</option>
+                            <option value="Midfielder">Midfielder</option>
+                            <option value="Forward">Forward</option>
+                            <option value="Can play multiple positions">
+                                Can play multiple positions
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Football Experience</label>
+                        <select id="experience" name="Football Experience">
+                            <option value="">Choose an option</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Some experience">Some experience</option>
+                            <option value="Experienced player">Experienced player</option>
+                            <option value="Played for another team">
+                                Played for another team
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jersey">Preferred Jersey Number</label>
+                        <input type="number" id="jersey"
+                               name="Preferred Jersey Number"
+                               min="1" max="99">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Tell us about yourself</label>
+                        <textarea id="message" name="Player Message"
+                                  placeholder="Your football experience, skills, and why you want to join..."></textarea>
+                    </div>
+
+                    <p class="form-note">
+                        By submitting this form, you confirm that the
+                        information provided is accurate and agree that
+                        the club may contact you about your application.
+                    </p>
+
+                    <button class="join-submit" type="submit">
+                        Submit Membership Application ↗
+                    </button>
+                </form>
+
+                <div class="join-contact">
+                    <p>Have questions about joining our team?</p>
+                    <p>
+                        Email:
+                        <a href="mailto:kelvinpadmore02@email.com">
+                            kelvinpadmore02@email.com
+                        </a>
+                    </p>
+                    <p><strong>NO GOAL. NO REST.</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.png" alt="" width="46" height="46">
+                <span>
+                    <strong>DETERMINE</strong>
+                    <small>BOYS ALL STAR</small>
+                </span>
+            </a>
+
+            <p>NO GOAL. NO REST.</p>
+
+            <a class="footer-email"
+               href="mailto:kelvinpadmore02@email.com">
+               kelvinpadmore02@email.com
+            </a>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Determine Boys All Star · Liberia</span>
+            <nav aria-label="Footer navigation">
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="fixtures.html">Fixtures</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
